@@ -4,13 +4,7 @@
 
 import csv
 from typing import List
-
-
-def index_range(page: int, page_size: int) -> tuple:
-    """Return a tuple of start and end indexes for a given page"""
-    start = (page - 1) * page_size
-    end = page * page_size
-    return (start, end)
+index_range = __import__("0-simple_helper_function").index_range
 
 
 class Server:
