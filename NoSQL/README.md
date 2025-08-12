@@ -1,0 +1,1 @@
+The term NoSQL, short for “not only SQL,” refers to non-relational databases that store data in a non-tabular format, rather than in rule-based, relational tables like relational databases do.
