@@ -2,3 +2,6 @@ __pycache__/
 venv
 .mypy_cache/
 *.mongodb.js
+db/
+configdb/
+2-insert.py
