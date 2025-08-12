@@ -4,3 +4,4 @@ venv
 *.mongodb.js
 db/
 configdb/
+2-insert.py
