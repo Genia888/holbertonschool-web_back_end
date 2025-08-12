@@ -1,2 +1,2 @@
-// my comment
+// insert document
 db.school.insertOne({ name: "Holberton school" })
