@@ -5,3 +5,6 @@ venv
 db/
 configdb/
 2-insert.py
+*.zip
+*.bson
+*.json
