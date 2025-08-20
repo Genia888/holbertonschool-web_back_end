@@ -1,4 +1,4 @@
-// 2-hbtn_course.js
+// Class representing a Holberton course
 export default class HolbertonCourse {
   constructor(name, length, students) {
     this.name = name;
@@ -6,10 +6,12 @@ export default class HolbertonCourse {
     this.students = students;
   }
 
+  // Getter for name
   get name() {
     return this._name;
   }
 
+  // Setter for name with type validation
   set name(value) {
     if (typeof value !== 'string') {
       throw new TypeError('Name must be a string');
@@ -17,10 +19,12 @@ export default class HolbertonCourse {
     this._name = value;
   }
 
+  // Getter for length
   get length() {
     return this._length;
   }
 
+  // Setter for length with type validation
   set length(value) {
     if (typeof value !== 'number') {
       throw new TypeError('Length must be a number');
@@ -28,10 +32,12 @@ export default class HolbertonCourse {
     this._length = value;
   }
 
+  // Getter for students
   get students() {
     return this._students;
   }
 
+  // Setter for students with type validation
   set students(value) {
     if (!Array.isArray(value) || !value.every((student) => typeof student === 'string')) {
       throw new TypeError('Students must be an array of string');
