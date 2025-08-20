@@ -9,3 +9,6 @@ configdb/
 *.bson
 *.json
 node_modules/
+.eslintrc.js
+babel.config.js
+eslint.config.mjs
