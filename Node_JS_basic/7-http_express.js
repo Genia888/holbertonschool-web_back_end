@@ -12,13 +12,11 @@ app.get('/', (req, res) => {
 
 app.get('/students', async (req, res) => {
   res.type('text/plain');
-  res.write('This is the list of our students\n');
-
   try {
     const output = await countStudents(database);
-    res.end(output);
+    res.send(`This is the list of our students\n${output.trim()}`);
   } catch (err) {
-    res.end(err.message);
+    res.send(`This is the list of our students\n${err.message}`);
   }
 });
 
